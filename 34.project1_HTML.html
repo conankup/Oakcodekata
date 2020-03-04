@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Mitr:400,700&display=swap&subset=thai');
+
+        html {
+            margin: 0;
+            padding: 0;
+            font-size: 10px;
+        }
+
+        body {
+            text-align: center;
+            color: #333;
+            font-family: 'Mitr', sans-serif;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        #main {
+            margin: 3% 2%;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #eee;
+        }
+
+        #title {
+            font-size: 5rem;
+            color: #fff;
+            letter-spacing: 6px;
+            text-shadow: 0.1em 0.1em 0.1em #333;
+        }
+
+        #img-div {
+            background: white;
+            padding: 20px;
+            margin: 0;
+            border-radius: 15px;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+            height: auto;
+            margin: 0 auto;
+        }
+        #img-caption {
+            margin: 25px 0 15px 0;
+        }
+
+        #tribute-info{
+            margin-top: 30px;
+            text-align: center;
+        }
+        h3{
+            font-size: 2.4rem;
+            text-shadow: 0.1em 0.1em 0.1em rgb(197, 194, 194);
+            text-align: center;
+        }
+
+        ul {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        line-height: 1.6;
+        list-style-type: none;
+ 
+        }
+        ul li{
+            position: relative;
+            padding-left: 35px;
+        }
+        /* ใส่รูปหัวข้อและปรับขนาด */
+        ul li::before{
+            content: '';
+            width: 30px;
+            height: 35px;
+            position: absolute;
+            background-image: url(https://i.pinimg.com/originals/69/b6/49/69b64998a7c08c20b564647c23a7a3e3.png);
+            background-size: cover;
+            background-position: center;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+
+        li {
+            margin: 25px 0;
+            font-size: 1.5rem;
+        }
+
+        blockquote {
+            font-style: italic;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            font-size: 1.4rem;
+        }
+        
+    @media (max-width: 1200px) {
+        body{
+            font-size: 1.4rem;
+        }
+        #title {
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+        #img-caption {
+            font-size: 1.4rem;
+        }
+        #tribute-info {
+            font-size: 1.3rem;
+        }
+        h3 {
+            font-size: 2rem;
+        }
+    }
+
+    </style>
+    <title>Dear Kobe</title>
+</head>
+
+<body>
+    <!-- ให้ทำ HTML และ CSS เพื่อทำหน้าเว็บไซต์ ประวัติผู้เสียชีวิต ให้เหมือนหน้าเว็บนี้ https://codepen.io/freeCodeCamp/full/zNqgVx
+สามารถเปลี่ยนเป็นประวัติของใครก็ได้
+ข้อกำหนด (Code จะต้องมีองค์ประกอบต่อไปนี้)
+User Story #1: My tribute page should have an element with a corresponding id="main", which contains all other elements.
+
+User Story #2: I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
+
+User Story #3: I should see a div element with a corresponding id="img-div".
+
+User Story #4: Within the img-div element, I should see an img element with a corresponding id="image".
+
+User Story #5: Within the img-div element, I should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in img-div.
+
+User Story #6: I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page.
+
+User Story #7: I should see an a element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab (i.e. target="_blank").
+
+User Story #8: The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+
+User Story #9: The img element should be centered within its parent element. -->
+    <div id="main">
+        <h1 id="title">Dear Kobe Bryant</h1>
+        <p>Kobe Bryant’ ชายผู้ที่สร้างจะแรงบันดาลให้คนรุ่นใหม่ไปตลอดกาล</p>
+        <div id="img-div">
+            <img src="https://adaddictth.com/wp-content/uploads/2020/01/Untitled-911-1024x489.jpg" alt="Dr. Kobe">
+            <div id="img-caption">
+                <p><strong>Kobe Bryant</strong> นักบาสระดับตำนาน ชายผู้ที่สวมเสื้อเบอร์ <strong>8</strong> และ <strong>24</strong> ให้กับทีม <strong>LA. Lakers</strong> ในลีค NBA ฉายาของเขาคือ <strong>Black Mamba</strong><br>
+                ชายผู้ซึ่งเป็นแรงบันดาลใจให้แก่ผู้คนทั้งโลกในการหัดเล่นบาสเกตบอล และพยายามแข่งขันเพื่อไปให้ถึงขีดสุดของความสามารถ เขาใจกว้างพอที่จะแบ่งปันความรู้ที่เขามี <br> และมองเห็นเรื่องดังกล่าวเป็นพันธกิจในการจะแบ่งปันสิ่งเหล่านี้กับเหล่าผู้เล่นในยุคต่อไป โดยเฉพาะการส่งต่อความรักที่เขามีต่อเกม
+                <br> เค้าได้เสียชีวิตจากอุบัติเหตุเฮลิคอปเตอร์ตกเมื่อวันที่ 26 มกราคม 2020</p>
+            </div>
+        </div>
+        <div id="tribute-info">
+            <h3>Here's a time line of Kobe Bryant life</h3>
+            <ul>
+                <li>Born : August 23, 1978 in Philadelphia</li>
+                <li>NBA Draft : 1996 ไบรอันต์ได้รับเลือกเป็นอันดับที่ 13 จากการดร๊าฟรอบแรกโดยทีม ชาร์ล็อตต์ ออร์เน็ตส์</li>
+                <li>Adjusting to the NBA : 1996 - 1999 ไบรอันต์ต้องเป็นตัวสำรองให้กับการ์ดรุ่นพี่อย่าง Eddie Jones และ Nick Van Exel ในขณะนั้น โคบีคือผู้เล่นที่มีอายุน้อยที่สุดในประวัติศาสตร์ และยังเป็นผู้เล่นตัวจริงที่อายุน้อยที่สุดที่เคยมีมาด้วย</li>
+                <li>Three-peat : 1999–2002 ในไม่ช้าชะตาชีวิตของไบรอันต์ก็เปลี่ยนไปเมื่อ ฟิล แจ็คสัน เข้ามารับหน้าที่โค้ชให้กับทีมเลเกอส์ ในปี 1999 หลังจากพัฒนาตัวเองมาหลายปี โคบีกลายมาเป็นผู้เล่นตำแหน่งการ์ดตัวทำคะแนน (ชู้ตติง การ์ด) ชั้นแนวหน้า ได้รับเลือกให้ติดทีมรวมเอ็นบีเอ, ออล สตาร์ และทีมรับยอดเยี่ยม ปีนี้ ลอสแอนเจลิส เลเกอส์ กลายมาเป็นทีมเต็งที่จะได้แชมป์ ภายใต้การนำทีมของ โคบี ไบรอันต์ และ แชคิล โอนีล ที่ผสมผสานการเล่นของเซ็นเตอร์กับการ์ดได้อย่างยอดเยี่ยม และด้วยแผนการบุกแบบสามเหลี่ยม (Triangle Offense) ซึ่ง ฟิล แจ็คสัน เคยใช้พาทีมชิคาโก บูลส์ คว้าแชมป์ไปแล้วถึง 6 สมัย ก็ทำให้ทั้งสามคนพาทีม เลเกอส์ได้แชมป์เอ็นบีเอ ถึง 3 ปีซ้อน ในปี 2000, 2001 และ 2002</li>
+                <li>Final season : หลังจากฟื้นฟูตัวเองจากอาการบาดเจ็บเพื่อกลับมาเล่นในฤดูกาล 2015-16 ซึ่งเป็นฤดูกาลที่ 20 ทำให้โคบีผ่านสถิติของจอห์น สต๊อกตัน ที่ 19 ฤดูกาล สำหรับผู้เล่นที่ลงเล่นให้กับหนึ่งทีมด้วยจำนวนฤดูกาลที่มากที่สุด และในวันที่ 29 พฤษจิกายน 2015</li>
+            </ul>
+            <blockquote
+            cite="https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%84%E0%B8%9A%E0%B8%B5_%E0%B9%84%E0%B8%9A%E0%B8%A3%E0%B8%AD%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C#NBA_Draft_%E0%B8%9B%E0%B8%B5_1996"
+          >
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;การสูญเสียสุดยอดนักบาสระดับตำนานผู้นี้ ได้สร้างความเสียใจให้กับบรรดาแฟนๆ ทั่วโลก รวมถึงเพื่อนร่วมอาชีพและคนดังหลากหลายวงการที่ออกมาโพสต์ไว้อาลัยให้กับการจากไปอย่างไม่มีวันกลับของโคบี ไบรอันท์ ผ่านโซเชียลมีเดียต่างๆ โดยอดีตคู่หูอย่าง ชาคิล โอนีล ได้โพสต์อาลัยถึงโคบีว่า "ไม่มีคำพูดใดๆ ที่จะถ่ายทอดความรู้สึกอันเจ็บปวดนี้ได้ ผมต้องเผชิญความโศกเศร้าด้วยการสูญเสียหลานสาวจิอันนาและน้องชายสุดที่รักของผม คู่หูของผมที่ร่วมคว้าแชมป์มาด้วยกัน เขาคือเพื่อนของผม และคือครอบครัวของผม"
+            </p>
+          </blockquote>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
