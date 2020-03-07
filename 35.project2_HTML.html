@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        fieldset{
+            display: flex;
+            width: 800px;
+
+        }
+        .book{
+            display: table-row;
+        }
+        label{
+            padding: 10px;
+            margin-left: 45px;
+        }
+        input[type="submit"]{
+            margin-top: 10px;
+            margin-left: 2px;
+        }
+        footer{
+            margin-left: 50px;
+            margin-top: 5px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- โจทย์ที่ 1 ทำ Form ให้เหมือนเป๊ะ ตาม file รูป image.png
+โจทย์ที่ 2 ใส่ Attribute อื่นๆ และ condition อื่นๆ สำหรับ Form
+Code the form with autocomplete active.
+Given the image shown in Figure 1, it is easy to see that two field sets are used to create the main structure of the form. Your task is to create the field sets, including the names Customer Info and Books. Don't worry about the content fields for the moment.
+The Name field you create should have autofocus, placeholder text, and be required. Don't forget to select the appropriate type for this field as well as all the fields that follow.
+The Telephone field should have placeholder text, a pattern to restrict entry, and be required.
+The Email address field should have placeholder text and allow multiple entries. This field should also be required.
+The Books field should have a data list. You can select the content you would like to list.
+The Quantity (Maximum 5) field should have a minimum value of 1 and a maximum value of 5. 
+https://trello-attachments.s3.amazonaws.com/5dc4b63419dee16d16cc039a/580x305/acb500be24e2130fc49d92250c3b6b10/image.png
+-->
+    <h2 style="color: #171262;">A Simple From</h2>
+    <h4 style="color: #a890fe; font-style: italic;">Form Fundamentals</h4>
+    <form id="orderForm" autocomplete="on" >
+    <fieldset>
+        <legend> Customer Info </legend>
+        <label for="name">Name:
+            <input type="text" name="name" id="name" placeholder="Enter your name" autofocus required size="30" required>
+        </label>
+        <label for="tel">Telephone:
+            <input type="tel" name="tel" id="tel" placeholder="Pattern: 012-3456789"
+                pattern="([0-9]{3}(-[0-9]{7}))" autofocus required size="20" required>
+        </label>
+        <label>Email address:
+            <input id="email" name="email" type="email" placeholder="Enter your email address" autofocus required size="30" required>
+        </label>
+    </fieldset>
+    <fieldset class="book">
+        <legend> Books </legend>
+        <label>
+            <input type="text" name="productlist" list="books" autofocus required size="40">
+            <datalist id="books">
+                <option value="HTML5 Canvas by Steve Fulton & Jeff Fulton">
+                <option value="JavaScript: The Definitive Guide by David Flanagan">
+                <option value="HTML5 Geolocation by Anthony T. Holdener III">
+                <option value="Supercharged JavaScript Graphics by Raffaele Cecco">
+                <option value="HTML5: Up and Running by Mark Pilgrim">
+            </datalist>
+        </label>
+        <label>
+            Quantity (Maximum 5): <input name="form_number" id="form_number" type="number" min="1" max="5">
+        </label>
+    </fieldset>
+    <input type="submit" value="Submit" />
+    </form>
+    <footer>@ 2011 Acme United .All rights reserved.</footer>
+</body>
+
+</html>
