@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Mitr|Pacifico&display=swap');
+html{ /* การ custom ค่า font-size ไม่ใช้ของ bootstrap ต้องไปเซ็ตใน html ที่เป็น root element */
+    font-size:16px;
+}
+
+body{
+    background: #DCEBFC;
+    font-family: 'Mitr', sans-serif;
+    /* font-family: 'Pacifico', cursive; */
+}
+
+.container{
+    background: #fff;
+    padding: 4.5rem
+}
+
+h1,h2,h3{
+    color:#4F85D7;
+}
+
+.footer{
+    font-family: 'Pacifico', cursive;
+}
+
+/* เราสามารถนำ <span> มาใช้ได้เพื่อกำหนดขนาดของมัน
+เช่น custom.css กำหนดขนาดของ icon ที่ 10rem */
+.front-icon{
+    display:block;
+    color: orange;
+    padding:3rem;
+    background:#000;
+}
+ 
+.front-icon i{
+    font-size: 10rem;
+}

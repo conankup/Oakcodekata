@@ -1,0 +1,64 @@
+       .jumbotron {
+         text-align: left;        
+         background-color: #eceeef;
+       }
+       
+       .navbar {
+         background-color: #292b2c;
+       }
+
+       a.navbar-brand {
+         color: #fff;
+       }
+
+       a.navbar-brand:hover {
+         color: #fff;
+       }
+
+       .nav-link {
+         color: #fff;
+       }
+
+       .navbar-nav>.active>a {
+         color: #fff;
+       }
+
+       .navbar-nav>.active>a:hover {
+         color: #fff;
+       }
+
+       .nav-item>a {
+         color: rgba(255, 255, 255, .5);
+       }
+
+       .nav-item>a:hover {
+         color: rgba(255, 255, 255, .75);
+       }
+
+       a.nav-link-disabled:link {
+         color: #ffffff40;
+         cursor: not-allowed;
+         text-decoration: none;
+         padding-right: .2rem;
+         padding-left: .2rem;
+         display: block;
+         padding: .5em .5em;
+       }
+
+       .dropdown-toggle::after {
+         display: inline-block;
+         width: 0;
+         height: 0;
+         margin-left: .1em;
+         vertical-align: middle;
+         content: "";
+         border-top: .27em solid;
+         border-right: .27em solid transparent;
+         border-left: .27em solid transparent;
+       }
+
+       .btn-secondary {
+         color: #292b2c;
+         background-color: #fff;
+         border-color: #ccc;
+       }
